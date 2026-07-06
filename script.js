@@ -33,7 +33,7 @@ const result = document.getElementById("result");
                 result.innerHTML = 
                 `
                     
-                    <div class="word">${word}</div>
+                    <div class="word" style="color:blue">${word}</div>
 
                     <div class="definition">
                         <strong>${partOfSpeech}</strong> : ${definition}
@@ -46,7 +46,7 @@ const result = document.getElementById("result");
             .catch(error => {
                 result.innerHTML = `
                     <p>${error.message}</p>
-                    <p>Try another word!</p>
+                    <p style="color:red">Try another word!</p>
                 `;
             });
 
